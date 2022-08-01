@@ -1,0 +1,143 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+
+
+  <header class="masthead" style="background-image: url('static/img/pexels-hasan-albari-1229861.jpg'); ">
+        <h1 class="hidden" style="color:#fff">This website is beta version and not for mobile devices. Please visit it from laptop or bigger devices</h1>
+
+    <div class="overlay"></div>
+        <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1 class="main-title" style="font-size: 30px;">A website designer, a python programmer, frontend and backend developer</h1>
+            <h2 style="color:#CEE5D0; font-size:20px; position:absolute; top:145px;left:110px;">I design and code beautifully simple things,<br> and I love what I do. If you're a business seeking <br>a web presence or are looking to hire, <a href="{{ url_for('login',id=2) }}" style="color:#fff"> contact me here.</a></h2>
+<!--            <p>hello</p>-->
+<!--            <span class="subheading">A collection of random musings.</span>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div class="row about-me-main">
+<div class="container-fluid col-lg-6" id="about-me">
+  <h1 class="about-me-title" style='font-family:"Great Vibes","cursive";color:#6E07F3;padding-top:90px'>Hi, I'm Pujan Vasania 👋</h1>
+  <p class="about-me-subheading" style="padding:4% 18% ;color:#6E07F3;line-height:1.5;text-align:centre;">Since beginning my journey as a student almost over 2 years, I've done remote work for agencies, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+<!--      <img class="img-about" src="{{url_for('static', filename='img/engineer-programmer-is-working-at-the-desk-programming-concept-vector-id1125753584.jpg')}}" align="middle" />-->
+
+</div>
+  <div class="container-fluid col-lg-6">
+    <img class="img-about" src="{{url_for('static', filename='img/engineer-programmer-is-working-at-the-desk-programming-concept-vector-id1125753584.jpg')}}" align="middle" />
+</div>
+</div>
+
+
+<div class="row about-me-main professional-main">
+    <div class="container-fluid col-lg-6">
+    <img class="img-about" src="{{url_for('static', filename='img/business-1.jpg')}}" align="middle" style="position:absolute;left:35%"/>
+</div>
+<div class="container-fluid col-lg-6" id="professional-life">
+  <h1 class="about-me-title" style='font-family:"Great Vibes","cursive";color:#6E07F3;padding-top:90px'>Skills and Expertise</h1>
+  <p class="about-me-subheading" style="padding:4% 17% ;color:#6E07F3;line-height:1.5;text-align:centre;">I am learning python for almost 2 years now. I have mastered several skills like Python, Python Pandas, Flask, GUI (Graphical User Interface),Web scraping (Selenium and Bs4). I have a strong background with Flask(Including Backend and Fronend with HTML and CSS), Pandas(Data Science) and PYTHON 🐍.</p>
+<!--      <img class="img-about" src="{{url_for('static', filename='img/engineer-programmer-is-working-at-the-desk-programming-concept-vector-id1125753584.jpg')}}" align="middle" />-->
+</div>
+</div>
+
+
+<div class="container-fluid internship" id="looking-for-internship" >
+  <h1 class="intern-title intern-font-padding" style='font-family:"Georgia","Serif";'>Looking For Internship</h1>
+  <p class="intern-paragraph intern-font-padding" style="line-height:1.5;;padding:0% 20% 2%">I have completed a great deal of coursework on cutting-edge design trends and best practices including Principles of Python and Web application design where I learned and applied skills such as web scraping, GUI and Website designing for a variety of mobile devices and operating systems.</p>
+  <p class="intern-paragraph intern-font-padding" style="line-height:1.5;">I believe I would make an excellent addition to your team. This internship would help me grow my real-world experience in the technology industry and help me further develop and refine my Python and Web design skills.</p>
+
+  <p class="intern-looking-forward" style="padding:2% 20% 0%">I look forward to hear from you!</p>
+  <p class="intern-sincerely intern-looking-forward">Sincerely,</p>
+  <p class="intern-name">Pujan Vasania</p>
+</div>
+
+<div class="container-fluid intern-contact">
+  <h2>Interested in hiring me as a intern ?</h2>
+  <p>I would love to, <a style="color:black" href="{{ url_for('login',id='1') }}">contact me here</a></p>
+</div>
+
+
+
+<div class="container-fluid footer-real" >
+
+<!--  Start a project-->
+  <div class="container start-a-project-main" style="margin-left:auto;margin-right:auto;">
+<div class=" row start-a-project" style="margin-top:-100px"  >
+  <div class="col-lg-4 start-a-project-1" >
+          <div style="padding-top:15%;">
+    <h4 style="font-size:30px;">Start a project</h4>
+            </div>
+  </div>
+    <div class="col-lg-4 start-a-project-2">
+      <div style="padding-top:10%">
+    <p class="project-2-paragraph"  style="font-size: 18px;">Interested in working together? We should queue up a time to chat. I’ll buy the coffee.</p>
+  </div>
+      </div>
+    <div class="col-lg-4 start-a-project-3">
+      <div style="padding-top:50px">
+    <a class="btn btn-outline-dark project-button" style=";color:#fff;border-radius:999px;padding:1.25em 2em;border-width:2px;border-color:#5BE9B9;" href="{{ url_for('login',id=2) }}" role="button">Let's Do it</a>
+ </div>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-after-project">
+<h4 class="footer-subtitle" style="font-weight:400;font-family:'eurostile', sans-serif">Live, learning, & Levelling up one day at a time</h4>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="margin-top:-60px">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a style="color:#6E07F3;" href="https://twitter.com/Pujan14134805/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+<!--            <li class="list-inline-item">-->
+<!--              <a  style="color:#6E07F3;" href="#">-->
+<!--                <span class="fa-stack fa-lg">-->
+<!--                  <i class="fas fa-circle fa-stack-2x"></i>-->
+<!--                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>-->
+<!--                </span>-->
+<!--              </a>-->
+<!--            </li>-->
+            <li class="list-inline-item">
+              <a  style="color:#6E07F3;" href="https://github.com/pujanisgreat">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>
+</div>
+
+</body>
+
+</html>
+
+  <!-- Main Content -->
+

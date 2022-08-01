@@ -1,0 +1,187 @@
+
+@media only screen and (min-width:1300px){
+.hidden{position:absolute;text-align:center;top:100px;display:none;}
+}
+
+.main-title {color:#A5C9CA;
+    font-size:10px;
+    position:absolute;
+    top:50px;
+    font-weight: 800;
+    color:"red";
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+
+#about-me{background-color:#fff;
+          text-align:center;
+          z-index:2;
+          }
+
+
+
+.masthead{padding:200px 0};}
+
+/*About me*/
+
+.about-me-title{padding-top:100px}
+
+.img-about{position: absolute;
+           top:45px;
+           width:62%;
+           height:90%
+           }
+.about-me-main{
+padding-left:15%}
+
+/*Professional life*/
+
+#professional-life{background-color:#fff;
+                   text-align:center;
+                    z-index:2;
+}
+
+.professional-main{padding:8%}
+
+/*Internship*/
+.internship{padding:auto 20%;
+            background-color:#6E07F3;
+            color:#fff;
+            text-align:center}
+
+.intern-title{padding:2.5% 20%}
+
+.intern-paragraph{padding:0% 20% 0%}
+
+.intern-looking-forward{padding:0% 20% 5%;}
+
+
+/*.intern-name{color:black;
+             padding:0% 20% 5%;
+             position:absolute;
+             top:2650px;
+             right:535px;}*/
+
+
+.intern-name{padding:0% 20% 5%;
+             margin-top:-90px}
+
+/* Contact me section */
+.contact-me{padding:0% 5% 2%}
+
+.form{text-align:center;}
+
+.label-type-project{padding-top:4%}
+
+/*Contact me button */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.sub-mit-button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-button-special{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width: 270px;
+    height: 80px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #2f2f2f;
+    font-size: 24px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding-top:15px;
+}
+
+.check-box{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+
+.check-box svg{
+    width: 40px;
+    margin: 20px;
+}
+
+svg path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active{
+    background: #6E07F3;
+    transition: 1s;
+}
+
+.active .check-box{
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p{
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+/*End of button*/
+input {
+       height:40px;
+       width:230px;
+       margin:10px;
+       }
+
+select {
+       height:40px;
+       width:230px;
+       margin:10px;    }
+
+/* Intern contact me here */
+.intern-contact{padding:3% 15% 3%;text-align:center;border-bottom:1px solid #E6ECF8;margin-top:1px;;border-top:1px solid #E6ECF8;}
+
+/* Start a project */
+
+.start-a-project{background-color:black;color:#fff;padding-top:1%;padding-bottom:3%;  border-radius: 25px;}
+
+.start-a-project-main{text-align:center;padding:3% 5%;}
+
+.project-2-paragraph{  font-weight: 800;
+  color:"red";
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.footer-after-project{color:#fff;}
+
+.footer-real{background-color:#6E07F3;margin-top:100px;}
+
+.footer-subtitle{text-align:center;padding:3% 38%}
+

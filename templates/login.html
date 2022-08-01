@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Home</title>
+
+  <!-- Bootstrap core CSS -->
+      <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/styles.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+
+  <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+<!--  <link href="{{ url_for('static', filename='css/clean-blog.css')}}" rel="stylesheet">-->
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container" style="color:#000000">
+      <a class="navbar-brand" href="{{ url_for('home') }}" ><img class="" src="{{url_for('static', filename='img/@2.png')}}" align="middle" height="50px" width="40px"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">About me </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('login',id=1) }}">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+{% block content %}
+
+
+  <link href="{{ url_for('static', filename='css/styles-2.css')}}" rel="stylesheet">
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/img/-media-gPnHi8AmO5k-unsplash.jpg'); padding-top:150px">
+   <!--contact me-->
+<div class="overlay">
+    {% if id == 1 %}}
+          <h1 style="text-align:center;padding:0% 25% 5%;color:black;">I’m excited to learn about internship. Always ready to get started.</h1>
+
+    {% elif id == 2 %}
+          <h1 style="text-align:center;padding:0% 25% 5%;color:black;">I’m excited to learn about your project. Ready to get started?</h1>
+
+    {% else %}
+          <h1 style="text-align:center;padding:0% 25% 5%;color:black;">Thanks for taking the time to reach out. How can I help you today?</h1>
+
+{% endif %}
+
+</div>
+
+<div class="container-fluid ">
+    <form class="form contact-me" action="/pujan" method="post">
+
+<div class="contact-me row ">
+
+    <div class="form col-lg-6">
+
+
+        <label class="label-type-project">Name</label>
+      <div>
+        <input type="text" placeholder="name" name="username">
+          </div>
+
+
+{% if id == 2 %}
+          <label class="label-type-project">Type of project</label>
+        <div>
+        <select required id="type-of-project" name="type-of-project" >
+    <option hidden selected></option>
+    <option value="Web-App">Web App</option>
+    <option value="Landing-Page">Landing Page</option>
+        </select>
+            </div>
+{% endif %}
+
+    </div>
+    <div class="form-2 col-lg-6">
+
+
+        <label class="label-type-project">Email</label>
+        <div>
+        <input type="email" placeholder="email" name="email">
+        </div>
+
+{% if id==2 %}
+          <label class="label-type-project project-budget-lable">Budget</label>
+        <div>
+        <select required id="budget" name="project-budget" >
+    <option hidden selected></option>
+    <option value="500-2000">$500 - $2000</option>
+    <option value="2000-10000">$500 - $10000</option>
+    <option value="10000">$10000 +</option>
+
+        </select>
+            </div>
+
+
+    </div>
+{% endif %}
+
+    </div>
+<div style="max-width: 400px; text-align:center;">
+</div>
+
+    {% if id==2 %}
+        <div class="label-type-project" style="padding-bottom: 18px;text-align:center;">Additional Details<br/>
+    {% endif %}
+    {% if id==3 %}
+<div class="label-type-project" style="; text-align:center;padding-left:240px">Additional Details<br/>
+    {% endif %}
+    {% if id==1 %}
+<div class="label-type-project" style="; text-align:center;padding-left:240px">Additional Details<br/>
+    {% endif %}
+
+    <textarea id="data_3" false name="additional-details" style="font-size:16pt;max-width : 565px;position:absolute;right:475px;" rows="6" class="form-control"></textarea>
+</div>
+
+        <div style="padding-top:200px" class="sub-mit-button">
+                <div class="container-button-special">
+        <button class="button
+" id="btn">
+            <p id="btnText">Submit</p>
+            <div class="check-box">
+                <svg class=".svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+        </button>
+    </div>
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn");
+        const btnText = document.querySelector("#btnText");
+
+        btn.onclick = () => {
+            btnText.innerHTML = "Thanks";
+            btn.classList.add("active");
+        };
+    </script>
+
+<!--        <button style="text-align:center;" type="submit">Ok</button>-->
+
+</div>
+            </div>
+        </form>
+</div>
+    </header>
+
+{% include "footer.html" %}
+{% endblock %}
